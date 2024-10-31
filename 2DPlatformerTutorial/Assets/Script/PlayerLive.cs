@@ -8,16 +8,9 @@ public class PlayerLive : MonoBehaviour
 {
     private Animator anim;
     private Rigidbody2D rb;
-    private Transform CheckPointPosition;
-    [SerializeField] private AudioSource deathSoundEffect;
-    [SerializeField] private GameObject[] LivesForTheMode;
-    public GameObject[] hearts5;
-    public GameObject[] hearts10;
-    public int lives;
-    private bool heartsMassive10;
-    private int justOneTime;
-    public int DeadFallInt;
     private Collider2D collider2D;
+    public int DeadFallInt;
+    int justOneTime;
     void Start()
     {
         collider2D = GetComponent<Collider2D>();
