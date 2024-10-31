@@ -8,12 +8,11 @@ public class PlayerLive : MonoBehaviour
 {
     private Animator anim;
     private Rigidbody2D rb;
-    private Collider2D collider2D;
     public int DeadFallInt;
     int justOneTime;
     void Start()
     {
-        collider2D = GetComponent<Collider2D>();
+        anim = GetComponent<Animator>();
         rb = GetComponent<Rigidbody2D>();
 
     }
